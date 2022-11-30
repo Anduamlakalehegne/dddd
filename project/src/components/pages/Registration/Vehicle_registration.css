@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --blue: #2a2185;
+  --white: #fff;
+  --gray: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.containerr {
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+}
+
+/* ---------------navigation--------------- */
+
+.navigation {
+  position: fixed;
+  width: 100px;
+  height: 100%;
+  transition: 0.5s;
+  background-color: rgb(54, 54, 54);
+  padding: 2px 28px;
+  text-decoration: none;
+  margin-top: 0px;
+}
+
+.navigation ul li {
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.5s;
+  list-style: none;
+  border-bottom: solid 2px rgb(109, 109, 109);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 7px;
+  padding-left: 5px;
+}
+
+.navigation ul li p {
+  transition: 0.5s;
+}
+
+.navigation ul li p:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+/* ---------------header--------------- */
+.header {
+  position: absolute;
+  width: calc(100% - 100px);
+  left: 100px;
+  min-height: 1vh;
+  box-shadow: 0 5px 7px -4px rgba(0, 0, 0, 0.4);
+  padding: 20px 0px 0 30px;
+  justify-content: space-between;
+  z-index: 1;
+  display: flex;
+}
+
+.header h3 {
+  text-align: center;
+  color: rgb(36, 114, 43);
+  padding-left: 500px;
+  padding-top: 4px;
+}
+
+.header h3 input {
+  text-align: left;
+  padding: 5px 10px 5px 20px;
+  border: none;
+  border-bottom: solid 1px rgb(0, 0, 0);
+  margin-right: 100px;
+}
+
+.header h2 {
+  text-align: left;
+}
+
+.header p {
+  padding-right: 30px;
+  padding-bottom: 10px;
+  transition: 0.5s;
+}
+
+.header p:hover {
+  transform: scale(1.2);
+}
+
+
+/* ---------------Forms--------------- */
+
+
+.column02 {
+  display: grid;
+  grid-template-columns: 52%  53%;
+  margin-right: 200px;
+  padding-right: 200px;
+  margin-top: 30px;
+}
+.form .input-boxx input {
+ height: 40px;
+ outline: none;
+ border: 1px solid rgb(0, 0, 0);
+ border-radius: 6px;
+ padding-left: 9px;
+}
+
+/* ---------------Forms--------------- */
+
+.register {
+  position: relative;
+  width: calc(100% - 100px);
+  left: 100px;
+  min-height: 88vh;
+  background-color: rgb(248, 246, 246);
+  color: var(--black1);
+  top: 75px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.register .form {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 0px;
+  padding-right: 150px;
+}
+
+.input-box p {
+  margin-bottom: 8px;
+}
+
+.form .input-box h1 {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  padding: 0px 0px 1px 0px;
+}
+
+.form .input-box h3 {
+  width: 100%;
+  margin-top: 2px;
+  padding: 0px 0px 10px 0px;
+}
+
+.form .input-box .icon {
+  width: 2%;
+  margin-bottom: 2px;
+}
+
+.form .input-box input {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.vehicle_information {
+  display: grid;
+  grid-template-columns: 31% 30% 30%;
+}
+
+.form .vehicle_info {
+  display: flex;
+}
+
+.detail .input-box {
+  margin-top: 10px;
+  padding-left: 0px;
+  padding-right: 50px;
+}
+
+.vehicle_detail .input-box h5 {
+  margin-bottom: 5px;
+}
+
+.button {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  column-gap: 46%;
+  justify-content: center;
+
+}
+
+.button .edit {
+  background-color: rgb(54, 57, 63);
+  width: 30%;
+  border: none;
+  padding: 10px;
+  color: var(--white);
+  border-radius: 10px;
+  margin-right: 150px;
+  transition: 0.5s;
+}
+
+.button .edit:hover {
+  transform: scale(1.03);
+}
+
+
+@media screen and (max-width: 830px) {
+  .form {
+    display: grid;
+  }
+
+  .vehicle_information {
+    display: grid;
+    grid-template-columns: 80%;
+  }
+
+  .form .vehicle_info {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .detail .input-box {
+    margin-top: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+ 
+}

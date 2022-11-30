@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   --blue: #2a2185;
+   --white: #fff;
+   --gray: #f5f5f5;
+   --black1: #222;
+   --black2: #999;
+}
+
+body {
+   min-height: 100vh;
+   overflow-x: hidden;
+}
+
+.containerr {
+   position: relative;
+   width: 100%;
+   text-decoration: none;
+}
+
+/* ---------------navigation--------------- */
+
+.navigation {
+   position: fixed;
+   width: 100px;
+   height: 100%;
+   transition: 0.5s;
+   background-color: rgb(54, 54, 54);
+   padding: 2px 28px;
+   text-decoration: none;
+   margin-top: 0px;
+}
+
+.navigation ul li {
+   text-decoration: none;
+   margin-top: 10px;
+   transition: 0.5s;
+   list-style: none;
+   border-bottom: solid 2px rgb(109, 109, 109);
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 7px;
+   padding-left: 5px;
+}
+.navigation ul li p{
+   transition: 0.5s;
+}
+.navigation ul li p:hover {
+   transform: scale(1.2);
+   transition: 0.5s;
+}
+
+/* ---------------header--------------- */
+.header {
+   position: absolute;
+   width: calc(100% - 100px);
+   left: 100px;
+   min-height: 1vh;
+   box-shadow: 0 5px 7px -4px rgba(0, 0, 0, 0.4);
+   padding: 20px 0px 0 30px;
+   justify-content: space-between;
+   z-index: 1;
+   display: flex;
+}
+
+.header h3{
+   text-align: center;
+   color: rgb(36, 114, 43);
+   padding-left: 500px;
+   padding-top: 4px;
+}
+.header h3 input{
+   text-align: left;
+   padding: 5px 10px 5px 20px;
+   border: none;
+   border-bottom: solid 1px rgb(0, 0, 0);
+   margin-right: 100px;
+}
+
+.header h2 {
+   text-align: left;
+}
+
+.header p {
+   padding-right: 30px;
+   padding-bottom: 10px;
+   transition: 0.5s;
+}
+.header p:hover {
+   transform: scale(1.2);
+}
+
+
+/* ---------------contents--------------- */
+.main {
+   position: absolute;
+   width: calc(100% - 100px);
+   left: 100px;
+   min-height: 88vh;
+   background-color: rgb(248, 246, 246);
+   color: var(--black1);
+   top: 75px;
+}
+
+.contents {
+   margin-top: 40px;
+   display: grid;
+   grid-template-columns: 100px 100px 100px;
+   justify-content: space-between;
+   width: 70%;
+   margin-left: 90px;
+   position: absolute;
+}
+
+.vehicle {
+   width: 300px;
+   background-color: rgb(26, 131, 150);
+   height: 120px;
+   margin-bottom: 50px;
+   border-radius: 10px;
+   text-align: center;
+   transition: 0.3s;
+   padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
+}
+
+.vehicle h4 {
+   color: var(--white);
+   padding: 15px;
+}
+
+.vehicle:hover {
+   transform: scale(1.09);
+}
+
+.users {
+   width: 300px;
+   background-color: rgb(20, 148, 37);
+   height: 120px;
+   margin-bottom: 50px;
+   border-radius: 10px;
+   text-align: center;
+   transition: 0.3s;
+   padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
+}
+
+.users h4 {
+   color: var(--white);
+   padding: 10px;
+}
+
+.users:hover {
+   transform: scale(1.09);
+}
+
+.monitor-vehicle {
+   width: 300px;
+   background-color: rgb(26, 131, 150);
+   height: 120px;
+   margin-bottom: 50px;
+   border-radius: 10px;
+   text-align: center;
+   transition: 0.3s;
+   padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
+}
+
+.monitor-vehicle h4 {
+   color: var(--white);
+   padding: 10px;
+}
+
+.monitor-vehicle:hover {
+   transform: scale(1.09);
+}
+
+.alert {
+   width: 300px;
+   background-color: rgb(16, 102, 66);
+   height: 120px;
+   margin-bottom: 50px;
+   border-radius: 10px;
+   text-align: center;
+   transition: 0.3s;
+   padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
+}
+
+.alert h4 {
+   color: var(--white);
+   padding: 10px;
+}
+
+.alert:hover {
+   transform: scale(1.09);
+}
+
+.registration {
+   width: 300px;
+   background-color: rgb(23, 134, 129);
+   height: 120px;
+   margin-bottom: 50px;
+   border-radius: 10px;
+   text-align: center;
+   transition: 0.3s;
+   padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
+}
+
+.registration h4 {
+   color: var(--white);
+   padding: 10px;
+}
+
+.registration:hover {
+   transform: scale(1.09);
+}
+
+.communication {
+   width: 300px;
+   background-color: rgb(15, 85, 189);
+   height: 120px;
+   margin-bottom: 50px;
+   border-radius: 10px;
+   text-align: center;
+   transition: 0.3s;
+   padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
+}
+
+.communication h4 {
+   color: var(--white);
+   padding: 10px;
+}
+
+.communication:hover {
+   transform: scale(1.09);
+}
+
+.report {
+   width: 300px;
+   background-color: rgb(201, 55, 55);
+   height: 120px;
+   margin-bottom: 50px;
+   border-radius: 10px;
+   text-align: center;
+   transition: 0.3s;
+   padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
+}
+
+.report h4 {
+   color: var(--white);
+   padding: 10px;
+}
+
+.report:hover {
+   transform: scale(1.09);
+}
+
+.tracking {
+   width: 300px;
+   background-color: rgb(105, 105, 105);
+   height: 120px;
+   margin-bottom: 50px;
+   border-radius: 10px;
+   text-align: center;
+   transition: 0.3s;
+   padding: 10%;
+   box-shadow: 0px 4px 4px -4px rgb(0, 0, 0);
+}
+
+.tracking h4 {
+   color: var(--white);
+   padding: 10px;
+}
+
+.tracking:hover {
+   transform: scale(1.09);
+}
+@media screen and (max-width: 1130px) {
+ 
+   .header h3{
+     display: none;
+   }
+   .contents {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      justify-content: space-around;
+      width: 70%;
+      margin-left: 30px;
+      column-gap: 180px;
+      padding-right: 50px;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .contents {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 100px;
+      justify-content: space-between;
+      width: 70%;
+      margin-left: 30px;
+      position: absolute;
+      padding-left: 150px;
+   }
+}
+@media screen and (max-width: 700px) {
+   .contents {
+      padding-left: 100px;
+   }
+}
+@media screen and (max-width: 600px) {
+   .contents {
+      padding-left: 60px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .contents {
+      padding-left: 20px;
+   }
+}
+@media screen and (max-width: 400px) {
+   .contents {
+      padding-left: 10px;
+   }
+}
+@media screen and (max-width: 360px) {
+   .contents {
+      padding-left: -100px;
+      margin-right: 200px;
+   }
+   
+}
+
+
+
+
